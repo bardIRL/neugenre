@@ -1,14 +1,25 @@
 <%- include('./partials/header') %>
 
-<div class="heading-ctr">
+<!--hero-->
+<section id="hero-ctr">
   <h1>neugenre</h1>
   <button>
-    <a id="start-your-search" href="#search">
-      <img src="../images/down.png" class="down-icon" />
-      start searching
-      <img src="../images/down.png" class="down-icon" />
-    </a>
+    <a id="start-searching-btn" href="#search">start searching</a>
   </button>
-</div>
+</section>
+
+<!--search-->
+<section id="search">
+  <h2>Search for a film</h2>
+  <div class="row">
+    <input type="search" />
+    <input type="submit" value="Search" />
+  </div>
+</section>
+
+<!--about-->
+<section id="about">
+  <h2>About neugenre</h2>
+</section>
 
 <%- include('./partials/footer') %>

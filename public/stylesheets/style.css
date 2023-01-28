@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,11 +25,18 @@ nav {
   align-items: center;
   background-color: #f1f1f1;
   border-bottom: 2px solid #e9e9e9;
+  position: fixed;
+  width: 100%;
 }
 
 #logo {
   letter-spacing: 2px;
   font-size: 18px;
+}
+
+#nav-links {
+  display: flex;
+  gap: 70px;
 }
 
 #nav-links a {
@@ -37,7 +48,7 @@ nav {
   border-bottom: 2px solid #884775;
 }
 
-.heading-ctr {
+#hero-ctr {
   background-image: linear-gradient(
       to right bottom,
       rgba(199, 128, 170, 0.459),
@@ -45,9 +56,9 @@ nav {
     ),
     url(../images/cinema.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   color: white;
   text-align: center;
   padding: 50px;
@@ -65,8 +76,8 @@ h1 {
 button {
   background-color: rgba(255, 255, 255, 0.76);
   border: 2px solid white;
-  border-radius: 32px;
-  padding: 20px;
+  border-radius: 33px;
+  padding: 22px;
   font-family: "Inter", Helvetica, Arial, sans-serif;
   font-weight: 500;
 }
@@ -79,9 +90,66 @@ button:hover {
   width: 12px;
 }
 
-#start-your-search {
+#start-searching-btn {
   font-size: 1.1rem;
   color: black;
+  padding: 20px;
+}
+
+#search,
+#about {
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+input[type="submit"] {
+  background-color: #cf93bd;
+  border: 2px solid #c98cb6;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-family: "Inter", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+input[type="submit"]:hover {
+  background-color: #c77fb1;
+}
+
+input[type="search"] {
+  width: 220px;
+  padding: 6px;
+}
+
+#about {
+  background-color: rgb(19, 19, 19);
+  color: white;
+}
+
+footer {
+  background-color: #c77fb1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: white;
+  font-weight: 400;
+}
+
+footer a:hover {
+  color: #d6d6d6;
 }
 
 @media only screen and (max-width: 500px) {
