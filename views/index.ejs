@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
-</html>
+<%- include('./partials/header') %>
+
+<div class="heading-ctr">
+  <h1>neugenre</h1>
+  <button>
+    <a id="start-your-search" href="#search">
+      <img src="../images/down.png" class="down-icon" />
+      start searching
+      <img src="../images/down.png" class="down-icon" />
+    </a>
+  </button>
+</div>
+
+<%- include('./partials/footer') %>
